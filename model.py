@@ -6,18 +6,21 @@ from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 from keras.models import Sequential
 
 
-image_dir = "dataset/Images/"
+dataset_dir = "dataset"
 images = []
 labels = []
 
-for filename in os.listdir(image_dir):
-    if filename.lower().endswith((".jpg", ".png")):
-        label = 0 if "clean" in filename.lower() else 1
-        img_path = os.path.join(image_dir, filename)
-        img = load_img(img_path, target_size=(224, 224))
-        img_array = img_to_array(img) / 255.0
-        images.append(img_array)
-        labels.append(label)
+classes = {"clean": 0, "dirty": 1}
+
+for class_name, label in classes.items():
+    folder = os.path.join(dataset_dir, class_name)
+    for filename in os.listdir(folder):
+        if filename.lower().endswith((".jpg", ".jpeg", ".png")):
+            img_path = os.path.join(folder, filename)
+            img = load_img(img_path, target_size=(224, 224))
+            img_array = img_to_array(img) / 255.0
+            images.append(img_array)
+            labels.append(label)
 
 images = np.array(images)
 labels = np.array(labels)
