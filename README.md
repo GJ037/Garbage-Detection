@@ -71,15 +71,14 @@ http://127.0.0.1:5000/
 The trained model (`model.keras`) is not included in the repository.
 
 To train the model:
-
-    ```bash
-    python model.py
-    ```
+```bash
+python model.py
+```
 
 After training, save the generated model as:
-    ```
-    model.keras
-    ```
+```
+model.keras
+```
 
 The model file will be saved in the root directory.
 
