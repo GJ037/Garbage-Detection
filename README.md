@@ -8,7 +8,6 @@ An AI-powered web tool that classifies images as 'Clean' or 'Dirty' using a trai
 * **User-Friendly Web Interface:** Simple and intuitive design for easy image uploads and result viewing.
 * **Image Upload & Prediction:** Allows users to upload JPG, JPEG, and PNG images and displays immediate prediction results with confidence scores.
 * **Responsive Design:** Optimized for seamless experience across various devices.
-* **Team & About Sections:** Provides information about the project and the development team.
 
 ## Technologies Used
 * **Python 3.x**
