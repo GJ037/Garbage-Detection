@@ -84,6 +84,7 @@ After training, save the generated model as:
     ```
     model.keras
     ```
+
 The model file will be saved in the root directory.
 
 
