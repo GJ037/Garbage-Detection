@@ -1,75 +1,134 @@
-# Garbage Detection AI
+# 🗑️ **GARBAGE DETECTION**
 
-## Project Description
-An AI-powered web tool that classifies images as 'Clean' or 'Dirty' using a trained TensorFlow/Keras model. Built with Flask, HTML, and CSS, this application aims to promote cleaner environments by providing a visual analysis of image cleanliness.
+**Garbage Detection** is an AI-powered web application that classifies images as **Clean** or **Dirty** using a deep learning model built with TensorFlow/Keras. The project combines computer vision with an intuitive web interface to promote environmental awareness through automated image analysis.
+The application is lightweight, easy to use, and designed for real-time image classification directly from a web browser.
 
-## Features
-* **AI-Powered Classification:** Utilizes a Convolutional Neural Network (CNN) to predict whether an image depicts a clean or dirty environment.
-* **User-Friendly Web Interface:** Simple and intuitive design for easy image uploads and result viewing.
-* **Image Upload & Prediction:** Allows users to upload JPG, JPEG, and PNG images and displays immediate prediction results with confidence scores.
-* **Responsive Design:** Optimized for seamless experience across various devices.
 
-## Technologies Used
+## 🚀 FEATURES
+
+### 🤖 **AI Classification**
+* Binary image classification (**Clean / Dirty**)
+* Deep learning model using TensorFlow/Keras
+* Real-time inference
+
+### 🌐 **Web Interface**
+* User-friendly interface
+* Image upload support
+* Instant prediction results
+
+### 🖼️ **Image Processing**
+* Supports multiple image formats
+* Automatic preprocessing pipeline
+* Normalization and resizing
+
+
+## 📦 SUPPORTED FORMATS
+
+* `.jpg`
+* `.jpeg`
+* `.png`
+
+
+## 🖥️ INSTALLATION
+Run:
+
+    ```bash
+    git clone https://github.com/GJ037/Garbage-Detection.git
+    cd Garbage-Detection
+
+    python -m venv venv
+    ```
+
+    Activate virtual environment:
+
+    **Windows**
+    ```bash
+    venv\Scripts\activate
+    ```
+
+    **Linux / macOS**
+    ```bash
+    source venv/bin/activate
+    ```
+
+    Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    Run the application:
+
+    ```bash
+    python app.py
+    ```
+
+    Open your browser and navigate to:
+
+    ```
+    http://127.0.0.1:5000/
+    ```
+
+
+## 🧠 MODEL TRAINING
+
+The trained model (`model.keras`) is not included in the repository.
+
+To train the model:
+
+    ```bash
+    python model.py
+    ```
+
+After training, save the generated model as:
+    ```
+    model.keras
+    ```
+
+The model file will be saved in the root directory.
+
+
+## 🧭 HOW TO USE
+
+1. Launch the Flask application
+2. Open the web interface
+3. Upload an image (`.jpg / .jpeg / .png`)
+4. Click **Predict**
+5. View the classification result
+
+
+## 🧱 ARCHITECTURE OVERVIEW
+
+```
+Garbage-Detection/
+│
+├── app.py              # Flask backend
+├── model.py            # Training script
+├── model.keras         # Trained model
+├── requirements.txt
+├── README.md
+│
+├── templates/          # HTML templates
+├── static/             # CSS, images and uploads
+└── dataset/            # Training dataset
+```
+
+
+## ⚙️ TECH STACK
+
 * **Python 3.x**
-* **Flask:** Web framework for the backend.
-* **TensorFlow / Keras:** For the machine learning model.
-* **HTML, CSS:** For the frontend web pages and styling.
-* **Numpy:** For numerical operations.
+* **Flask** – Web framework
+* **TensorFlow / Keras** – Deep learning
+* **NumPy** – Numerical computation
+* **Pillow** – Image processing
+* **HTML & CSS** – Frontend development
 
-## Installation & Setup
-Follow these steps to get the Garbage Detection AI application running on your local machine:
 
-### 1. Prerequisites
-* **Git:** Make sure Git is installed on your system. ([Download Git](https://git-scm.com/downloads))
-* **Python 3.x:** Ensure Python 3 is installed. ([Download Python](https://www.python.org/downloads/))
+## 📈 PROJECT HIGHLIGHTS
 
-### 2. Clone the Repository
-First, clone this repository to your local machine:
-
-```bash
-git clone https://github.com/CookieDevLab/Garbage_detection
-cd your-repo-name # Replace with your actual repository folder name
-```
-
-### 3. Set Up a Virtual Environment
-It's highly recommended to use a virtual environment to manage dependencies:
-
-```bash
-python -m venv venv
-```
-
-### 4. Activate the Virtual Environment
-On Windows:
-```bash
-.\venv\Scripts\activate
-```
-On macOS / Linux:
-```bash
-source venv/bin/activate
-```
-
-### 5. Install Dependencies
-```bash
-pip install numpy tensorflow scikit-learn pillow flask
-```
-
-### 6. Train the Model
-The model.keras file is not directly included in the repository. You need to train the model yourself using the provided dataset and training script.
-Ensure your dataset is organized as expected by your training script.
-Run your training script
-
-```bash
-python model.py
-```
-
-# Important: Your training script must save the trained model as model.keras directly in the root directory of this project.
-
-### 7. Run the Application
-Once the model.keras file has been generated by your training script, you can run the Flask application:
-```bash 
-python app.py
-```
-The application will start on http://127.0.0.1:5000/. Open your web browser and navigate to:
-
-http://127.0.0.1:5000/ for the home page.
-http://127.0.0.1:5000/tool to upload images and get predictions.
+* Implemented CNN-based classification
+* Added Flask web interface
+* Image upload functionality
+* Real-time prediction system
+* Confidence score visualization
+* Responsive UI design
