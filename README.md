@@ -97,15 +97,12 @@ The model file will be saved in the root directory.
 ```
 Garbage-Detection/
 │
-├── app.py              # Flask backend
-├── model.py            # Training script
-├── model.keras         # Trained model
-├── requirements.txt
-├── README.md
-│
 ├── templates/          # HTML templates
 ├── static/             # CSS, images and uploads
-└── dataset/            # Training dataset
+├── dataset/            # Training dataset
+├── model.keras         # Trained model
+├── model.py            # Training script
+└── app.py              # Flask backend
 ```
 
 
