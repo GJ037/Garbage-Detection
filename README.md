@@ -1,6 +1,6 @@
-# 🗑️ **GARBAGE DETECTION**
+# 🌱 **ECOSCOPE**
 
-**Garbage Detection** is an AI-powered web application that classifies images as **Clean** or **Dirty** using a deep learning model built with TensorFlow/Keras. The project combines computer vision with an intuitive web interface to promote environmental awareness through automated image analysis.
+**Ecoscope** is an AI-powered web application that classifies images as **Clean** or **Dirty** using a deep learning model built with TensorFlow/Keras. The project combines computer vision with an intuitive web interface to promote environmental awareness through automated image analysis.
 The application is lightweight, easy to use, and designed for real-time image classification directly from a web browser.
 
 
@@ -33,8 +33,8 @@ The application is lightweight, easy to use, and designed for real-time image cl
 
 1. Run:
 ```bash
-git clone https://github.com/GJ037/Garbage-Detection.git
-cd Garbage-Detection
+git clone https://github.com/GJ037/Ecoscope.git
+cd Ecoscope
 python -m venv venv
 ```
 
@@ -88,14 +88,14 @@ The model file will be saved in the root directory.
 1. Launch the Flask application
 2. Open the web interface
 3. Upload an image (`.jpg / .jpeg / .png`)
-4. Click **Predict**
-5. View the classification result
+4. Click **Analyze**
+5. View the Analysis result
 
 
 ## 🧱 ARCHITECTURE OVERVIEW
 
 ```
-Garbage-Detection/
+Ecoscope/
 │
 ├── templates/          # HTML templates
 ├── static/             # CSS, images and uploads
